@@ -1,0 +1,23 @@
+const NFTs = []
+function mintNFT(NAME,EYE,SHIRT,BLING,HEIGHT) {
+    const NFT = {
+        "Name " : NAME,
+        "EyeColour " : EYE,
+        "ShirtType " : SHIRT,
+        "Bling " : BLING,
+        "Height " : HEIGHT,
+    }
+    NFTs.push(NFT);
+    console.log("INFO ABOUT : "+NAME);
+}
+function listNFTs() {
+    for (let i = 0; i<NFTs.length; i++) {
+        console.log(NFTs[i]);
+    }
+}
+function getTotalSupply() {
+    console.log(NFTs.length);
+}
+mintNFT(" RUCHI ", " BROWN BLACK ", " CROCHET ", " RING "," 180 cm ");
+listNFTs();
+getTotalSupply();
